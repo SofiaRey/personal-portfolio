@@ -1,6 +1,7 @@
 import questionMark from "./assets/questionMark.png";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Header() {
   const professions = [
@@ -11,7 +12,7 @@ export default function Header() {
   ];
 
   let [mousePos, setMousePos] = useState({});
-  let [index, setIndex] = useState(0);
+  let [currentProfessionIndex, setCurrentProfessionIndex] = useState(0);
 
   // ---------------- GSAP ----------------
   const anim = gsap.timeline();
@@ -38,22 +39,39 @@ export default function Header() {
 
   // ---------------- Change word ----------------
   useEffect(() => {
-    const interval = setInterval(() => {
-      // TODO: delete
-      // anim.fromTo("#anim-words", { opacity: 0 }, { duration: 0.3, opacity: 1 });
-      setIndex(index == 3 ? 0 : index++);
-    }, 800);
+    const intervalId = setInterval(() => {
+      setCurrentProfessionIndex(
+        (currentProfessionIndex) =>
+          (currentProfessionIndex + 1) % professions.length
+      );
+    }, 1500);
 
-    return () => clearInterval(interval);
-  }, [index]);
+    return () => clearInterval(intervalId);
+  }, [professions.length]);
+
+  const currentProfession = professions[currentProfessionIndex];
 
   return (
     <header className="md:h-screen flex items-center">
       <div className="flex items-start flex-col ml-24 md:ml-40">
-        <h2 className="text-white text-2xl md:text-6xl text-thin mb-4">Hola, soy</h2>
-        <h1 id="anim-words" className="text-amarillo font-bold text-3xl md:text-8xl transition-all text-left">
-          ¿{professions[index]}?
-        </h1>
+        <h2 className="text-white text-2xl md:text-6xl text-thin mb-4">
+          Hola, soy
+        </h2>
+        <AnimatePresence mode="wait">
+          {currentProfession && (
+            <motion.h1
+              key={currentProfession}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="text-amarillo font-bold text-3xl md:text-8xl transition-all text-left"
+            >
+              <span>¿{currentProfession}?</span>
+            </motion.h1>
+          )}
+        </AnimatePresence>
+
         <div
           id="anim-question"
           className="hidden md:block absolute w-5/12 right-0 bottom-20"
