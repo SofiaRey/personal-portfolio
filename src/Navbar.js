@@ -45,6 +45,7 @@ export default function Navbar() {
                   <div className="flex ">
                     {navigation.map((item) => (
                       <div
+                        key={item.name}
                         className={`nav-item w-24 h-20 relative flex md:mr-8 lg:mr-12 justify-center items-center transition-all hover:scale-110 duration-150 ease-in-out`}
                       >
                         <a href={item.href}>

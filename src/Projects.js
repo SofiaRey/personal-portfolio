@@ -124,8 +124,9 @@ export default function About() {
         </a>
       </div>
       <div className="relative flex w-10/12 md:w-8/12 flex-wrap pr-10">
-        {projects.map((proj) => (
+        {projects.map((proj, i) => (
           <ProjectCard
+            key={proj.title + i}
             img={proj.img}
             title={proj.title}
             tag={proj.tag}
