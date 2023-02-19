@@ -3,7 +3,7 @@ import ProfilePicture from "./assets/profile.png";
 export default function About() {
 
   return (
-    <section className="about flex items-center relative">
+    <section id='about' className="about flex items-center relative">
       <div className="flex items-center md:items-start h-full md:ml-40 md:justify-end justify-center flex-col md:flex-row">
         <div className="mix-blend-luminosity w-4/12 md:h-full flex items-end mb-6 md:mb-0">
           <img className="rounded-full md:rounded-none object-contain bottom-0 md:w-full" src={ProfilePicture} />

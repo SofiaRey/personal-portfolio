@@ -38,8 +38,8 @@ export default function Mouse() {
 
   return (
     <>
-      <div className="mouse-follower fixed w-20 h-20 border border-white z-30 top-0 left-0 rounded-full mix-blend-exclusion"></div>
-      <div className="mouse fixed w-4 h-4 bg-white z-30 top-0 left-0 rounded-full mix-blend-exclusion"></div>
+      <div className="mouse-follower fixed w-16 h-16 border border-white z-30 top-0 left-0 rounded-full mix-blend-exclusion"></div>
+      <div className="mouse fixed w-3 h-3 bg-white z-30 top-0 left-0 rounded-full mix-blend-exclusion"></div>
     </>
   );
 }

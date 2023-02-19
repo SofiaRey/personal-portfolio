@@ -1,8 +1,8 @@
 import wireframeImg from "./assets/wireframeImg.jpg";
 
-export default function ProjectPreview({ img, title, tag, url, isDark }) {
+export default function ProjectPreview({ img, title, tag, url, isDark, showMobile }) {
   return (
-    <a className={`w-6/12 md:w-4/12 z-20 p-2 relative ${!isDark && "font-loved"}`}>
+    <a className={`w-full md:w-4/12 z-20 p-2 relative ${!isDark && "font-loved"} ${!showMobile && 'hidden md:block'}`}>
       <article
         className={`flex flex-col w-full items-start pb-4 pt-2 px-2 m-2 ${
           isDark
