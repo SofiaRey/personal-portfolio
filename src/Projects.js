@@ -16,30 +16,35 @@ export default function About() {
       title: "Afiches",
       tag: "Graphic Design",
       url: "",
+      showMobile: true,
     },
     {
       img: ElectroAficheFront,
       title: "Afiches",
       tag: "Graphic Design",
       url: "",
+      showMobile: true,
     },
     {
       img: ElectroAficheFront,
       title: "Afiches",
       tag: "Graphic Design",
       url: "",
+      showMobile: true,
     },
     {
       img: ElectroAficheFront,
       title: "Afiches",
       tag: "Graphic Design",
       url: "",
+      showMobile: false,
     },
     {
       img: ElectroAficheFront,
       title: "Afiches",
       tag: "Graphic Design",
       url: "",
+      showMobile: false,
     },
     {
       img: ElectroAficheFront,
@@ -47,6 +52,7 @@ export default function About() {
       tag: "Graphic Design",
       date: "December 12, 2022",
       url: "",
+      showMobile: false,
     },
   ];
 
@@ -76,6 +82,7 @@ export default function About() {
 
   return (
     <section
+      id="projects"
       className={`relative flex md:h-screen items-center pl-24 md:pl-40 overflow-hidden w-full justify-between flex-wrap py-20 ${
         isDark ? "bg-violetaDarker" : "bg-white"
       }`}
@@ -87,7 +94,7 @@ export default function About() {
           isMouseOver ? "fixed" : "hidden"
         }`}
       >
-        Click me!
+        Click!
       </div>
       <div className="flex flex-col items-star w-10/12 md:w-4/12">
         <div className={`flex-col  ${isDark ? "flex" : "hidden"}`}>
@@ -124,6 +131,7 @@ export default function About() {
             tag={proj.tag}
             date={proj.date}
             isDark={isDark}
+            showMobile={proj.showMobile}
           />
         ))}
         <div
