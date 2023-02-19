@@ -39,16 +39,16 @@ export default function Navbar() {
               </div>
               <div className="ml-24 flex flex-1 items-center sm:items-stretch justify-end">
                 <div className="flex flex-shrink-0 absolute top-4 left-0 ml-24 nav-item transition-all md:w-20 w-16">
-                  <img src={signImg} className='w-full' />
+                  <img src={signImg} className="w-full" />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex ">
                     {navigation.map((item) => (
                       <div
-                        className={`nav-item w-24 h-20 relative flex md:mr-8 lg:mr-12 justify-center items-center transition-all`}
+                        className={`nav-item w-24 h-20 relative flex md:mr-8 lg:mr-12 justify-center items-center transition-all hover:scale-110 duration-150 ease-in-out`}
                       >
-                        <a href={item.href} className={`hover:animate-spin`}>
-                          <img className="w-8/12" src={item.img} />
+                        <a href={item.href}>
+                          <img className="w-8/12 mx-auto" src={item.img} />
                         </a>
                         <p className={`text-${item.name} absolute bottom-0`}>
                           {item.name}
