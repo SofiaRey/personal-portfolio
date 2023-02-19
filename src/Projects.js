@@ -114,10 +114,10 @@ export default function About() {
           </h1>
         </div>
         <a
-          className={`border px-4 py-2 w-32 md:w-40 mt-8 z-10 ${
+          className={`border px-4 py-2 w-32 md:w-40 mt-8 transition z-10 ${
             isDark
-              ? "border-amarillo text-amarillo hover:border-white hover:text-white"
-              : "border-black text-black hover:border-gray-600 hover:text-gray-600"
+              ? "border-amarillo text-amarillo hover:border-white hover:bg-white hover:text-black"
+              : "border-black text-black hover:border-black hover:bg-black hover:text-white"
           }`}
         >
           Explore
