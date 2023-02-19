@@ -83,7 +83,7 @@ export default function About() {
   return (
     <section
       id="projects"
-      className={`relative flex md:h-screen items-center pl-24 md:pl-40 overflow-hidden w-full justify-between flex-wrap py-20 ${
+      className={`relative flex md:h-screen items-center pl-24 md:pl-40 overflow-hidden w-full justify-between flex-wrap py-20 transition-all duration-300 ${
         isDark ? "bg-violetaDarker" : "bg-white"
       }`}
       onMouseEnter={() => setisMouseOver(true)}
@@ -114,10 +114,10 @@ export default function About() {
           </h1>
         </div>
         <a
-          className={`border px-4 py-2 w-32 md:w-40 mt-8 z-10 ${
+          className={`border px-4 py-2 w-32 md:w-40 mt-8 transition z-10 ${
             isDark
-              ? "border-amarillo text-amarillo hover:border-white hover:text-white"
-              : "border-black text-black hover:border-gray-600 hover:text-gray-600"
+              ? "border-amarillo text-amarillo hover:border-white hover:bg-white hover:text-black"
+              : "border-black text-black hover:border-black hover:bg-black hover:text-white"
           }`}
         >
           Explore
