@@ -83,7 +83,7 @@ export default function About() {
   return (
     <section
       id="projects"
-      className={`relative flex md:h-screen items-center pl-24 md:pl-40 overflow-hidden w-full justify-between flex-wrap py-20 ${
+      className={`relative flex md:h-screen items-center pl-24 md:pl-40 overflow-hidden w-full justify-between flex-wrap py-20 transition-all duration-300 ${
         isDark ? "bg-violetaDarker" : "bg-white"
       }`}
       onMouseEnter={() => setisMouseOver(true)}
