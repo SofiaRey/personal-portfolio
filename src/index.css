@@ -1,13 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #4228ac;
+  cursor: none !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    #4228ac 15.97%,
+    #3d24a6 52.25%,
+    #452ab4 55.86%,
+    #4228ac 90.93%
+  );
+  height: 50vh;
+}
+
+.nav-item:hover {
+  filter: invert(40%) sepia(35%) saturate(5428%) hue-rotate(169deg)
+    brightness(106%) contrast(101%);
+}
+
+.triangle {
+  background-image: url(assets/Triangle.svg);
+}
+
+.about,
+.values {
+  height: 50vh;
+}
+
+.imgAdap {
+  max-width: 140% !important;
+  width: 140% !important;
+}
+
+.mouse,
+.mouse-follower,
+.mouse-text {
+  user-select: none;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .values {
+    height: 100%;
+  }
+
+  .about {
+    height: 70vh;
+  }
+}
+
+.pro-text {
+  -webkit-text-stroke: 2px black;
 }
