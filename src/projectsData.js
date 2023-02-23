@@ -125,7 +125,7 @@ const projectsData = [
     imgFrontPage: frontPageGhibli,
     galleryImages: [gallery1Ghibli, gallery2Ghibli, gallery3Ghibli],
     texts: [
-      "Desktop web made with HTML, CSS and JavaScript. Design made in figma. The work includes basic documentation and functional page.",
+      "Desktop web made with HTML, CSS and JavaScript. Design made in Figma. The work includes basic documentation and functional page.",
     ],
     webUrl: "https://studio-ghibli-dusky.vercel.app/",
     showMobile: true,
@@ -138,7 +138,7 @@ const projectsData = [
     imgFrontPage: frontPageValorant,
     galleryImages: [gallery1Valorant, gallery2Valorant, gallery3Valorant],
     texts: [
-      "Desktop web made with HTML, CSS and JavaScript for the frontend and Node.js for the backend. Design made in figma. The work includes basic documentation and functional page. It uses the Valorant API to get the content.",
+      "Desktop web made with HTML, CSS and JavaScript for the frontend and Node.js for the backend. Design made in Figma. The work includes basic documentation and functional page. It uses the Valorant API to get the content.",
     ],
     webUrl: "https://valorant-page-iota.vercel.app/",
     showMobile: true,
@@ -152,7 +152,7 @@ const projectsData = [
     galleryImages: [gallery1Recetario, gallery2Recetario, gallery3Recetario],
     bigPicture: bigPictureRecetario,
     texts: [
-      "Desktop web made with HTML, CSS and JavaScript for the frontend and Node.js for the backend. Design made in figma. The work includes basic documentation and functional page.",
+      "Desktop web made with HTML, CSS and JavaScript for the frontend and Node.js for the backend. Design made in Figma. The work includes basic documentation and functional page.",
     ],
     showMobile: true,
   },
