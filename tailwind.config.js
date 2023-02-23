@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        violetaLight: "#5232D3",
         violeta: "#4228AC",
         violetaDarker: "#39219A",
         amarillo: "#DDD518",

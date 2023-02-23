@@ -6,9 +6,11 @@ import { AnimatePresence, motion } from "framer-motion";
 export default function Header() {
   const professions = [
     "UI DESIGNER",
-    "PROGRAMADORA",
-    "EDITORA DE VIDEOS",
-    "FOTÓGRAFA",
+    "PROGRAMMER",
+    "VIDEO EDITOR",
+    "UX DESIGNER",
+    "PHOTOGRAPHER",
+    "GRAPHIC DESIGNER",
   ];
 
   let [mousePos, setMousePos] = useState({});
@@ -55,7 +57,7 @@ export default function Header() {
     <header className="md:h-screen flex items-center">
       <div className="flex items-start flex-col ml-24 md:ml-40">
         <h2 className="text-white text-2xl md:text-6xl text-thin mb-4">
-          Hola, soy
+          Hi, I'm a
         </h2>
         <AnimatePresence mode="wait">
           {currentProfession && (

@@ -1,14 +1,15 @@
 import { Outlet } from "react-router-dom";
+import Mouse from "./Mouse";
+import Footer from "./Footer";
 
 import "./App.css";
-import Navbar from "./Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
-
+      <Mouse />
       <Outlet />
+      <Footer />
     </>
   );
 }

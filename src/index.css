@@ -72,3 +72,7 @@ header {
 .pro-text {
   -webkit-text-stroke: 2px black;
 }
+
+.proj-img-cont:hover .proj-img {
+  filter: saturate(1);
+}

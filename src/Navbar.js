@@ -38,9 +38,9 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="ml-24 flex flex-1 items-center sm:items-stretch justify-end">
-                <div className="flex flex-shrink-0 absolute top-4 left-0 ml-24 nav-item transition-all md:w-20 w-16">
+                <a href="/" className="flex flex-shrink-0 absolute top-4 left-0 ml-24 nav-item transition-all md:w-20 w-16">
                   <img src={signImg} className="w-full" />
-                </div>
+                </a>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex ">
                     {navigation.map((item) => (
