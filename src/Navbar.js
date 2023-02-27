@@ -8,7 +8,7 @@ import planeImg from "./assets/navPlane.svg";
 import cubeImg from "./assets/navCube.svg";
 
 const navigation = [
-  { name: "Home", img: dotImg, href: "#", current: true },
+  { name: "Home", img: dotImg, href: "#header", current: true },
   { name: "About me", img: lineImg, href: "#about", current: false },
   { name: "Projects", img: planeImg, href: "#projects", current: false },
   { name: "Contact", img: cubeImg, href: "#contact", current: false },

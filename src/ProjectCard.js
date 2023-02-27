@@ -30,7 +30,7 @@ export default function ProjectPreview({
             src={isDark ? img : wireframeImg}
           />
         </div>
-        <h4 className="text-lg font-bold text-left">{title}</h4>
+        <h4 className="text-xl truncate w-full  font-bold text-left">{title}</h4>
         <div
           className={`border mr-auto text-xs px-2 ${
             isDark

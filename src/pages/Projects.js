@@ -18,6 +18,8 @@ export default function Projects() {
     UIUX: projectsData.filter((proj) => proj.category == "UIUX"),
     Programming: projectsData.filter((proj) => proj.category == "Programming"),
     ThreeD: projectsData.filter((proj) => proj.category == "ThreeD"),
+    Photography: projectsData.filter((proj) => proj.category == "Photography"),
+    Illustration: projectsData.filter((proj) => proj.category == "Illustration"),
   });
 
   return (

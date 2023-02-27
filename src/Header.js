@@ -54,7 +54,7 @@ export default function Header() {
   const currentProfession = professions[currentProfessionIndex];
 
   return (
-    <header className="md:h-screen flex items-center">
+    <header id="header" className="h-96 md:h-screen flex items-center relative">
       <div className="flex items-start flex-col ml-24 md:ml-40">
         <h2 className="text-white text-2xl md:text-6xl text-thin mb-4">
           Hi, I'm a
