@@ -3,7 +3,6 @@ import About from "../About";
 import Values from "../Values";
 import ProjectsSection from "../ProjectsSection";
 import Navbar from "../Navbar";
-import Footer from "../Footer";
 
 import WhiteCanvas from "../WhiteCanvas";
 
@@ -38,16 +37,11 @@ function Home() {
         className="fixed left-0 mix-blend-exclusion z-30"
         src={ProcessLine}
       />
-      < div className='cont'>
       <Navbar />
       <Header />
       <About />
       <Values />
       <ProjectsSection />
-      <Footer />
-      
-      </div>
-      <WhiteCanvas id='bla' />
     </div>
   );
 }
