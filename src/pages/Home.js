@@ -25,7 +25,7 @@ ScrollTrigger.create({
   // start: "top bottom",
   scrub: true,
   // pin: '.cont',
-  markers: true,
+  // markers: true,
   id: 'id',
   // pinSpacing: false
 });
