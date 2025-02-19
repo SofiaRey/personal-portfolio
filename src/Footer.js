@@ -13,7 +13,7 @@ export default function Footer() {
       <a className="md:hidden w-12 mb-4" href="#">
         <img src={favicon} />
       </a>
-      <h3 className="font-loved text-xl">More to come...</h3>
+      <h3 className="font-patrick-hand text-xl">More to come...</h3>
       <a className="hidden md:block" href="#">
         <img className="w-14" src={faviconOutlined} />
       </a>

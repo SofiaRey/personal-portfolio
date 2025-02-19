@@ -3,6 +3,7 @@ import About from "../About";
 import Values from "../Values";
 import ProjectsSection from "../ProjectsSection";
 import Navbar from "../Navbar";
+import VideoSection from "../VideoSection";
 
 import ProcessLine from "../assets/processLine.svg";
 
@@ -15,6 +16,7 @@ function Home() {
       />
       <Navbar />
       <Header />
+      <VideoSection />
       <About />
       <Values />
       <ProjectsSection />

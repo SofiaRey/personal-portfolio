@@ -12,7 +12,7 @@ export default function ProjectPreview({
     <a
       href={`/projects/${id}`}
       className={`proj-img-cont w-full md:w-4/12 z-20 p-2 relative ${
-        !isDark && "font-loved"
+        !isDark && "font-patrick-hand"
       } ${!showMobile && "hidden md:block"}`}
     >
       <article

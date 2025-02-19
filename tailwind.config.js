@@ -13,9 +13,11 @@ module.exports = {
       },
       fontFamily: {
         'rubik': ['Rubik', 'sans'],
-        'loved': ['Loved by the King', 'cursive'],
+        'patrick-hand': ['Patrick Hand', 'cursive'],
       }, 
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
